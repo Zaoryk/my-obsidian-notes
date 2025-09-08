@@ -1,5 +1,5 @@
 ## Modelamiento de Soluciones Informáticas  
-**Área:** Tecnologías De Información Y Ciberseguridad  
+**Área:** Tecnologías De Informacsión Y Ciberseguridad  
 
 ---
 
