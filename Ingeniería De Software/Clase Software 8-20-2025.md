@@ -3,10 +3,10 @@
 La ingeniería de software es un ciclo de vida de un software, ya sea diseño, codificación, depliage y mantenimiento.
 # ==SEMANA 1
 
-| Siglo | Desarrollo software                                                                                                                                                                                                                    |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| XX    | En esta, se buscaba una estandarización del desarrollo software, definir metodología que buscaba la construcción de programas. En esta, hubo crisis, surgiendo varios métodos estructuradas. Llegó UML y consolidación de metodologías |
-| XXI   | Dominio de las metodologías ágiles y la transformación digital                                                                                                                                                                         |
+| Siglo | Desarrollo software                                                                                                                                                                                                                    |     |     |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
+| XX    | En esta, se buscaba una estandarización del desarrollo software, definir metodología que buscaba la construcción de programas. En esta, hubo crisis, surgiendo varios métodos estructuradas. Llegó UML y consolidación de metodologías |     |     |
+| XXI   | Dominio de las metodologías ágiles y la transformación digital                                                                                                                                                                         |     |     |
 
 | Palabras Claves                            | Definición                                                                                                                                                              |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
