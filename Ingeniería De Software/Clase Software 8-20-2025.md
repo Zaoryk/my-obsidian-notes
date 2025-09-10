@@ -50,7 +50,7 @@ Pueden beneficiarse de metodologías más estructuradas que proporcionen un mayo
 ### Requerimientos del cliente:
 Necesidades y expectativas del clientes influyen en la elección de metodología.
 ### Plazos y recursos disponibles
-la disponibilidad de tiempo y recursos también es ugljkhgfkluytrfujyhtn factor crucial. Proyectos con plazos ajustados pueden beneficiarse de metodologías ágiles que promuevan entregas incrementales y rápidas.
+la disponibilidad de tiempo y recursos también es un factor crucial. Proyectos con plazos ajustados pueden beneficiarse de metodologías ágiles que promuevan entregas incrementales y rápidas.
 
 ## Metodologías
 
