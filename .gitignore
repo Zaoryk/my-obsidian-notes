@@ -1,5 +1,4 @@
 *.wav
-*.mp3
 .obsidian/plugins/
 .obsidian/cache/
 .obsidian/workspace.json
