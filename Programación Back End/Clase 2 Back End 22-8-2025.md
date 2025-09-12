@@ -14,10 +14,10 @@
 - **Herencia**: otras tablas como `Categoria`, `Zona`, `Dispositivo` heredan de `BaseModel`.  
 
 ### Campos de fechas
-| Campo | Función |
-|-------|----------|
-| `created_at` | Fecha de creación del registro. |
-| `updated_at` | Última modificación. |
+| Campo        | Función                          |
+| ------------ | -------------------------------- |
+| `created_at` | Fecha de creación del registro.  |
+| `updated_at` | Última modificación.             |
 | `deleted_at` | Soft delete (NULL = no borrado). |
 
 ### class Meta
@@ -55,3 +55,57 @@ python manage.py createsuperuser
 http://localhost:8000/admin/
 ```
 
+### Personalización del Admin
+
+
+| Funcion           | Descripción                                   |
+| ----------------- | --------------------------------------------- |
+| `list_display`    | Mostrar varias columnas en lista.             |
+| `list_filter`     | Filtros laterales (ej. activos/inactivos)     |
+| `search_fields`   | Buscador por campos especíicos                |
+| `readonly_fields` | Campos de solo lectura.                       |
+| `fieldsets`       | Agrupar campos en secciones                   |
+| Acciones          | Ejemplo: apagar varios dispositivos a la vez. |
+
+### Clase 8: Consultas y Navegación
+#### Objetivos
+- Consultar datos con el **ORM de Django**
+- Mostrar datos dinámicos en **templates**.
+- Implementar navegación entre vistas y rutas.
+
+#### Consultas ORM Básicas
+
+```bash
+Empleado.objects.all()
+Empleado.objects.filter(cargo="Admin")
+Producto.objects.filter(precio__lte=50)  # Precio menor o igual a 50
+```
+
+#### Operaciones Avanzadas
+- Condiciones lógicas con `Q`.
+- Exclusiones con `.exclude()`.
+- Agregaciones y agrupamientos con `annotate`, `aggregate`.
+- `F-expressions`: cálculos en la base de datos.
+- Subconsultas y `Exists` (avanzado).
+
+### Templates
+- Pasar datos desde vistas con `context`
+- Mostrar en HTML con:
+```bash
+{{ variable }}
+```
+
+### Navegación entre Vistas
+En `urls.py`
+```bash
+path("empleados/", views.lista_empleados, name="empleados")
+```
+en template:
+```bash
+<a href="{% url 'empleados' %}">Lista de empleados</a>
+```
+### Ejemplo Práctico
+- Crear modelo `Medicion`.
+- Vista que liste todas las mediciones.
+- Template con listado.
+- Link con ID -> detalle de una medición
