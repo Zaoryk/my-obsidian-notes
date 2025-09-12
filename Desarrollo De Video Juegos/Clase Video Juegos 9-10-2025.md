@@ -81,9 +81,9 @@
 ## Roadmap de Aprendizaje en Unity
 
 ###  Inicial
-- [ ] Instalar Unity (versión LTS recomendada).  
-- [ ] Crear primer proyecto (2D o 3D).  
-- [ ] Explorar paneles básicos (Project, Hierarchy, Scene, Inspector).  
+- [x] Instalar Unity (versión LTS recomendada).  
+- [x] Crear primer proyecto (2D o 3D).  
+- [x] Explorar paneles básicos (Project, Hierarchy, Scene, Inspector).  
 
 ###  Objetos y Escenas
 - [ ] Añadir GameObjects básicos (Cube, Sphere, Plane).  
@@ -91,8 +91,8 @@
 - [ ] Configurar colisiones con Colliders.  
 - [ ] Manipular transformaciones (posición, rotación, escala).  
 
-### 🎥 Componentes Clave
-- [ ] Configurar una cámara.  
+###  Componentes Clave
+- [x] Configurar una cámara.  
 - [ ] Añadir luces y efectos visuales.  
 - [ ] Integrar audios.  
 
