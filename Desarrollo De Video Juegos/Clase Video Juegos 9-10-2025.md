@@ -89,7 +89,7 @@
 - [x] Añadir GameObjects básicos (Cube, Sphere, Plane).  
 - [x] Aplicar materiales y texturas.  
 - [ ] Configurar colisiones con Colliders.  
-- [ ] Manipular transformaciones (posición, rotación, escala).  
+- [x] Manipular transformaciones (posición, rotación, escala).  
 
 ###  Componentes Clave
 - [x] Configurar una cámara.  
