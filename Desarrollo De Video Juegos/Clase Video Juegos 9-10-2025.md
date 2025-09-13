@@ -86,18 +86,18 @@
 - [x] Explorar paneles básicos (Project, Hierarchy, Scene, Inspector).  
 
 ###  Objetos y Escenas
-- [ ] Añadir GameObjects básicos (Cube, Sphere, Plane).  
-- [ ] Aplicar materiales y texturas.  
+- [x] Añadir GameObjects básicos (Cube, Sphere, Plane).  
+- [x] Aplicar materiales y texturas.  
 - [ ] Configurar colisiones con Colliders.  
 - [ ] Manipular transformaciones (posición, rotación, escala).  
 
 ###  Componentes Clave
 - [x] Configurar una cámara.  
 - [ ] Añadir luces y efectos visuales.  
-- [ ] Integrar audios.  
+- [x] Integrar audios.  
 
 ###  Gestión de Recursos
-- [ ] Crear y usar Prefabs.  
+- [x] Crear y usar Prefabs.  
 - [ ] Importar assets externos (modelos 3D, audios).  
 - [ ] Descargar paquetes de la Asset Store.  
 
