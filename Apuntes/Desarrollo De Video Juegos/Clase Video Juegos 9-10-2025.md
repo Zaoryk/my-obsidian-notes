@@ -88,12 +88,12 @@
 ###  Objetos y Escenas
 - [x] Añadir GameObjects básicos (Cube, Sphere, Plane).  
 - [x] Aplicar materiales y texturas.  
-- [ ] Configurar colisiones con Colliders.  
+- [x] Configurar colisiones con Colliders.  
 - [x] Manipular transformaciones (posición, rotación, escala).  
 
 ###  Componentes Clave
 - [x] Configurar una cámara.  
-- [ ] Añadir luces y efectos visuales.  
+- [x] Añadir luces y efectos visuales.  
 - [x] Integrar audios.  
 
 ###  Gestión de Recursos
