@@ -104,7 +104,93 @@ Pasos sugeridos:
 | **GoF** (Gang of Four) | Soluciones implementables → cada patrón incluye su propio diagrama de clases. Ejemplos: Singleton, Factory, Observer, Decorator, Adapter. |
 
 ---
+## Diagramas de Componentes
 
+### ¿Qué es un componente?
+- Elemento físico de software: ejecutable, DLL, librería, base de datos, módulo.
+- Es la **materialización de clases**.
+
+### Tipos de componentes
+| Tipo | Ejemplos |
+|------|----------|
+| **Distribución** | Ejecutables, DLLs, ActiveX, Java Beans |
+| **Trabajo** | Código fuente, bases de datos |
+| **Ejecución** | Objetos dinámicos creados en tiempo de ejecución (índices de un buscador, sesiones) |
+
+### Estereotipos UML de componentes
+| Estereotipo | Significado |
+|-------------|-------------|
+| `<<executable>>` | Programa ejecutable |
+| `<<library>>` | Biblioteca (estática o dinámica) |
+| `<<table>>` | Tabla de base de datos |
+| `<<file>>` | Archivo de datos o código |
+| `<<document>>` | Documento |
+
+### Interfaces en componentes
+- **Provistas/Requeridas** → lo que ofrece y lo que necesita.  
+- Se representan como “puertas de entrada/salida”.  
+- Permiten **reutilización**: un componente se puede sustituir por otro si cumple la misma interfaz.
+
+---
+
+## Dependencias y Subsistemas
+
+- **Dependencia**: relación donde un componente usa los servicios de otro.
+- **Subsistemas**: agrupaciones lógicas de componentes.  
+  - Equivalentes a paquetes en nivel lógico.  
+  - Se representan con `<<subsystem>>`.
+
+---
+
+## Diagramas de Despliegue
+
+### Concepto
+- Muestran la **disposición física** del sistema:  
+  - Nodos (servidores, dispositivos, terminales).  
+  - Componentes desplegados en cada nodo.  
+
+### Nodos
+| Tipo | Descripción |
+|------|-------------|
+| **Procesador** | Nodo con capacidad de cómputo, ejecuta componentes. |
+| **Dispositivo** | Nodo sin cómputo, representa hardware auxiliar. |
+
+### Conexiones entre nodos
+- Se modelan como **asociaciones bidireccionales**.  
+- Pueden etiquetarse con protocolos: `<<TCP/IP>>`, `<<RDSI>>`, `<<RS-232>>`, etc.
+
+### Relación Nodo ↔ Componente
+- Los **componentes** → empaquetamiento físico.  
+- Los **nodos** → despliegue físico.  
+- Ejemplo:  
+  - Nodo servidor despliega `ventas.exe` y `clientes.exe`.  
+  - Nodo cliente despliega `user.exe`.
+
+---
+
+## Arquitecturas Multinivel
+
+- **2 niveles** → Cliente/Servidor (cliente hace el trabajo pesado).  
+- **3 niveles** → Separación en:  
+  1. Presentación  
+  2. Lógica de negocio  
+  3. Almacenamiento  
+
+Ventajas:  
+- Flexibilidad en mantenimiento.  
+- Separación clara de responsabilidades.  
+- Facilita reutilización.
+
+---
+
+## Puntos Clave del Modelado
+
+- Los **modelos deben ser útiles, simples y elegantes**.  
+- Es importante mantener **trazabilidad** entre niveles de abstracción.  
+- Apostar por **orientación a objetos con UML**.  
+- Posibles mejoras futuras:  
+  - **Evolución**: uso de bases de datos orientadas a objetos.  
+  - **Revolución**: generación automática de código a partir de modelos (MDA, Model Driven Architecture).
 # Resumen Visual
 
 ### Paradigma 4+1
