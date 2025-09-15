@@ -3,7 +3,7 @@
 ---
 ## Paradigma 4+1
 ![[Pasted image 20250915104623.png]]
-
+![[Pasted image 20250915110407.png]]
 ### Conceptos
 - **Vista**: Representación del sistema desde una perspectiva.  
 - **Punto de vista**: Conjunto de reglas para interpretar las vistas.  
