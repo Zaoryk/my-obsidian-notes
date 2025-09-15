@@ -209,3 +209,9 @@ Ventajas:
 ### Patrones de Diseño
 - GRASP: principios de asignación de responsabilidades.  
 - GoF: patrones clásicos implementables (Factory, Singleton, Observer, etc.).  
+
+## Bibliografía Recomendada
+- Martin Fowler – *UML Distilled (UML Gota a Gota)*  
+- Pierre-Alain Muller – *Instant UML*  
+- Terry Quatrani – *Visual Modeling*  
+- Recursos UML: [OMG UML](https://www.omg.org/spec/UML/)  

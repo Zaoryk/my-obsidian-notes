@@ -177,8 +177,3 @@ Cada caso de uso debe describirse con:
 | Postcondiciones | Tarjeta validada |
 | Goal | Operación en <30 segundos |
 | Extensiones | Consultar saldo, Retirar dinero |
-
----
-
-### Descripción de Escenarios
-Similar a la de casos de uso, pero en formato de **relato** narrativo.
