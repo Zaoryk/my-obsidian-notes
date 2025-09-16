@@ -3,7 +3,7 @@
 ### Objetivo del Documento
 - [ ] Visión técnica inicial de módulos Maestros y Transaccionales
 - [ ] Definir campos y atributos para entidades principales
-- [ ] Mockups de interfaz como referencia visual (modo claro)
+- [x] Mockups de interfaz como referencia visual (modo claro)
 - [ ] Insumo base para análisis y diseño en Django o similar
 
 ---
