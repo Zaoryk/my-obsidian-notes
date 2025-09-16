@@ -1,7 +1,7 @@
 ## Autenticación en Django - Resumen Back-End
 
 ###  Objetivos de Autenticación
-- [ ] Comprender flujo de login/logout en Django
+- [x] Comprender flujo de login/logout en Django
 - [ ] Usar `as_view()` con vistas basadas en clases (CBV)
 - [ ] Aprovechar `django.contrib.auth.views`
 - [ ] Proteger vistas con `@login_required` y `LoginRequiredMixin`

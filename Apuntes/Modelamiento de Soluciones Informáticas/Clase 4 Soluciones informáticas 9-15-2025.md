@@ -215,3 +215,130 @@ Ventajas:
 - Pierre-Alain Muller – *Instant UML*  
 - Terry Quatrani – *Visual Modeling*  
 - Recursos UML: [OMG UML](https://www.omg.org/spec/UML/)  
+
+# INFORMACION EXTRA
+
+---
+
+## Patrones de Diseño
+
+### ¿Qué son?
+- Soluciones probadas a problemas recurrentes en desarrollo.
+- Nacieron en los 70s, popularizados por el libro **Design Patterns (GoF, 1994)**.
+- Beneficios:
+  1. **Ahorro de tiempo** → no reinventar la rueda.  
+  2. **Seguridad y estabilidad** → ya probados por la comunidad.  
+  3. **Lenguaje común** → facilita comunicación entre desarrolladores.
+
+---
+
+## Tipos de Patrones de Diseño (GoF)
+
+### 1. Patrones Creacionales
+Simplifican la **creación de objetos** y desacoplan la forma de crearlos de la lógica del software.
+
+| Patrón | Descripción |
+|--------|-------------|
+| **Abstract Factory** | Interfaz para crear familias de objetos relacionados. |
+| **Factory Method** | Las subclases deciden cómo instanciar objetos. |
+| **Builder** | Separa creación y estructura, permite distintos productos con mismo proceso. |
+| **Singleton** | Asegura que solo exista una instancia global. |
+| **Prototype** | Clona objetos existentes como plantillas. |
+
+---
+
+### 2. Patrones Estructurales
+Definen cómo se relacionan las clases/objetos entre sí.
+
+| Patrón | Descripción |
+|--------|-------------|
+| **Adapter** | Permite compatibilidad entre interfaces distintas. |
+| **Bridge** | Separa abstracción e implementación para evolucionar por separado. |
+| **Composite** | Estructuras jerárquicas tipo árbol. |
+| **Decorator** | Añade responsabilidades a objetos dinámicamente. |
+| **Facade** | Proporciona interfaz simplificada a subsistemas complejos. |
+| **Flyweight** | Reduce uso de memoria compartiendo objetos pesados. |
+| **Proxy** | Representa a otro objeto (ej. acceso remoto, diferido). |
+
+---
+
+### 3. Patrones de Comportamiento
+Gestionan algoritmos, comunicación y responsabilidades.
+
+| Patrón | Descripción |
+|--------|-------------|
+| **Command** | Encapsula una operación en un objeto. |
+| **Chain of Responsibility** | Mensajes pasan por cadena hasta ser manejados. |
+| **Interpreter** | Define gramáticas y procesamiento de expresiones. |
+| **Iterator** | Itera sobre colecciones sin exponer su estructura. |
+| **Mediator** | Centraliza la comunicación entre objetos. |
+| **Memento** | Permite restaurar el estado previo de un objeto. |
+| **Observer** | Notifica cambios a objetos suscritos. |
+| **State** | Modifica el comportamiento según estado interno. |
+| **Strategy** | Selecciona algoritmo en tiempo de ejecución. |
+| **Template Method** | Define pasos de un algoritmo, subclases los completan. |
+| **Visitor** | Separa operaciones de las estructuras de datos. |
+
+---
+
+## Patrones GRASP
+
+Guían en la **asignación de responsabilidades** dentro del diseño orientado a objetos.
+
+| Patrón | Descripción |
+|--------|-------------|
+| **Experto en información** | La clase con la info adecuada asume la responsabilidad. |
+| **Creador** | Una clase es responsable de instanciar otra bajo ciertos criterios. |
+| **Bajo acoplamiento** | Minimizar dependencias entre clases. |
+| **Alta cohesión** | Mantener clases enfocadas en una sola responsabilidad. |
+| **Controlador** | Clase que gestiona eventos del sistema. |
+| **Polimorfismo** | Usar herencia e interfaces para manejar variaciones. |
+| **No hables con extraños** | Limitar interacciones a objetos cercanos. |
+
+---
+
+## Ejemplos de Patrones
+
+### Patrón CRUD
+- **Completo**: Agrupa **Create, Read, Update, Delete** en un solo caso de uso.  
+- **Parcial**: Separa operaciones simples de las más complejas.  
+
+Ventaja: Reduce redundancia y asegura que las 4 operaciones estén contempladas.
+
+### Patrón Adapter
+- **Problema**: Dos clases con interfaces incompatibles.  
+- **Solución**: Crear una clase adaptadora que traduce llamadas.  
+- **Beneficio**: Reutilización de código sin modificar implementaciones existentes.
+
+---
+
+## Diagramas en Modelamiento
+
+### Diferencias Clave
+
+| Aspecto | **Arquitectura** | **Componentes (UML)** | **Despliegue (UML)** |
+|----------|------------------|------------------------|-----------------------|
+| **Enfoque** | Visión general del sistema | Módulos lógicos de software | Infraestructura física |
+| **Nivel de abstracción** | Alto | Medio | Bajo (cercano al hardware) |
+| **Qué muestra** | Capas, módulos, relaciones | Servicios, librerías, clases empaquetadas | Nodos físicos y procesos desplegados |
+| **Utilidad** | Comunicación con stakeholders | Desarrollo y mantenimiento | Instalación y planificación |
+| **Incluye hardware** | ❌ | ❌ | ✅ |
+| **Incluye código** | Parcial | Sí | Indica qué se ejecuta, no cómo |
+| **Usa UML** | Opcional | ✅ | ✅ |
+
+---
+
+### Ejemplo aplicado (Plataforma de educación online)
+
+1. **Arquitectura**  
+   - Usuarios, autenticación, streaming, DB, almacenamiento, notificaciones.  
+
+2. **Componentes**  
+   - Frontend, backend con microservicios (cursos, tareas, calificaciones).  
+   - Servicios externos (DB, streaming, almacenamiento).  
+
+3. **Despliegue**  
+   - Infraestructura en la nube (AWS).  
+   - Balanceador de carga + servidores web + DB + almacenamiento + notificaciones.  
+
+---
