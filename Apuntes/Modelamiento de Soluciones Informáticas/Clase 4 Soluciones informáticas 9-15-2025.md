@@ -340,5 +340,3 @@ Ventaja: Reduce redundancia y asegura que las 4 operaciones estén contempladas.
 3. **Despliegue**  
    - Infraestructura en la nube (AWS).  
    - Balanceador de carga + servidores web + DB + almacenamiento + notificaciones.  
-
----
