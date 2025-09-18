@@ -27,7 +27,6 @@ Define **4 vistas + 1 escenario** para describir un sistema software.
 - Ejemplo: Cliente en comercio electrónico → login → compra → confirmación → envío.  
 
 ---
-
 ## Vista Lógica – Diagramas
 - **Diagramas de clase**: relaciones entre objetos, atributos, métodos.  
 - **Diagramas de comunicación**: interacción entre objetos.  
@@ -52,7 +51,6 @@ Define **4 vistas + 1 escenario** para describir un sistema software.
 ==Los atributos o métodos estáticos se subrayan.  ==
 
 ---
-
 ## Relaciones en UML
 | Tipo | Descripción |
 |------|-------------|
@@ -73,7 +71,6 @@ Ejemplo:
 - Dependencia: **Notificador → Usuario** (no bidireccional).  
 
 ---
-
 ## Mapeo UML → Modelo Relacional
 Pasos sugeridos:
 1. Modelar clases.  
@@ -90,7 +87,6 @@ Pasos sugeridos:
 ==En UML, una tabla se representa como clase con estereotipo ==`«Table»`. 
 
 ---
-
 ## Patrones de Diseño
 
 ### Definición
@@ -132,7 +128,6 @@ Pasos sugeridos:
 - Permiten **reutilización**: un componente se puede sustituir por otro si cumple la misma interfaz.
 
 ---
-
 ## Dependencias y Subsistemas
 
 - **Dependencia**: relación donde un componente usa los servicios de otro.
@@ -141,7 +136,6 @@ Pasos sugeridos:
   - Se representan con `<<subsystem>>`.
 
 ---
-
 ## Diagramas de Despliegue
 
 ### Concepto
@@ -167,7 +161,6 @@ Pasos sugeridos:
   - Nodo cliente despliega `user.exe`.
 
 ---
-
 ## Arquitecturas Multinivel
 
 - **2 niveles** → Cliente/Servidor (cliente hace el trabajo pesado).  
@@ -182,7 +175,6 @@ Ventajas:
 - Facilita reutilización.
 
 ---
-
 ## Puntos Clave del Modelado
 
 - Los **modelos deben ser útiles, simples y elegantes**.  
@@ -219,7 +211,6 @@ Ventajas:
 # INFORMACION EXTRA
 
 ---
-
 ## Patrones de Diseño
 
 ### ¿Qué son?
@@ -231,7 +222,6 @@ Ventajas:
   3. **Lenguaje común** → facilita comunicación entre desarrolladores.
 
 ---
-
 ## Tipos de Patrones de Diseño (GoF)
 
 ### 1. Patrones Creacionales
@@ -246,7 +236,6 @@ Simplifican la **creación de objetos** y desacoplan la forma de crearlos de la 
 | **Prototype** | Clona objetos existentes como plantillas. |
 
 ---
-
 ### 2. Patrones Estructurales
 Definen cómo se relacionan las clases/objetos entre sí.
 
@@ -261,7 +250,6 @@ Definen cómo se relacionan las clases/objetos entre sí.
 | **Proxy** | Representa a otro objeto (ej. acceso remoto, diferido). |
 
 ---
-
 ### 3. Patrones de Comportamiento
 Gestionan algoritmos, comunicación y responsabilidades.
 
@@ -280,7 +268,6 @@ Gestionan algoritmos, comunicación y responsabilidades.
 | **Visitor** | Separa operaciones de las estructuras de datos. |
 
 ---
-
 ## Patrones GRASP
 
 Guían en la **asignación de responsabilidades** dentro del diseño orientado a objetos.
@@ -296,7 +283,6 @@ Guían en la **asignación de responsabilidades** dentro del diseño orientado a
 | **No hables con extraños** | Limitar interacciones a objetos cercanos. |
 
 ---
-
 ## Ejemplos de Patrones
 
 ### Patrón CRUD
@@ -327,7 +313,6 @@ Ventaja: Reduce redundancia y asegura que las 4 operaciones estén contempladas.
 | **Usa UML** | Opcional | ✅ | ✅ |
 
 ---
-
 ### Ejemplo aplicado (Plataforma de educación online)
 
 1. **Arquitectura**  
@@ -339,4 +324,4 @@ Ventaja: Reduce redundancia y asegura que las 4 operaciones estén contempladas.
 
 3. **Despliegue**  
    - Infraestructura en la nube (AWS).  
-   - Balanceador de carga + servidores web + DB + almacenamiento + notificaciones.  
+   - Balanceador de carga + servidores web + DB + almacenamiento + notificaciones.
