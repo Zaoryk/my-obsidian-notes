@@ -49,6 +49,7 @@ MiApp/
  ├─ java/ (código fuente)
  ├─ res/ (layouts, imágenes, strings)
  ├─ gradle/ (configuración de build)
+ 
 ---
 
 ## Interfaz Gráfica (Layouts)
