@@ -1,4 +1,3 @@
-# Android Studio – Guía Completa
 
 ##  ¿Qué es Android Studio?
 - IDE oficial para desarrollo Android.  
