@@ -1,4 +1,3 @@
-
 ##  ¿Qué es Android Studio?
 - IDE oficial para desarrollo Android.  
 - Basado en IntelliJ IDEA.  
