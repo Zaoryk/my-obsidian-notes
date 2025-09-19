@@ -2,9 +2,9 @@
 
 ###  Objetivos de Autenticación
 - [x] Comprender flujo de login/logout en Django
-- [ ] Usar `as_view()` con vistas basadas en clases (CBV)
-- [ ] Aprovechar `django.contrib.auth.views`
-- [ ] Proteger vistas con `@login_required` y `LoginRequiredMixin`
+- [x] Usar `as_view()` con vistas basadas en clases (CBV)
+- [x] Aprovechar `django.contrib.auth.views`
+- [x] Proteger vistas con `@login_required` y `LoginRequiredMixin`
 - [ ] Relacionar usuarios con Organization y filtrar datos
 
 ---
