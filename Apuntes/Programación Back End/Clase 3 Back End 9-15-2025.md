@@ -5,7 +5,7 @@
 - [x] Usar `as_view()` con vistas basadas en clases (CBV)
 - [x] Aprovechar `django.contrib.auth.views`
 - [x] Proteger vistas con `@login_required` y `LoginRequiredMixin`
-- [ ] Relacionar usuarios con Organization y filtrar datos
+- [x] Relacionar usuarios con Organization y filtrar datos
 
 ---
 
