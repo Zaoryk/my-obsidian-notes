@@ -1,8 +1,8 @@
 ## REQUERIMIENTO DESARROLLO - PROYECTO DULCERÍA LILIS
 
 ### Objetivo del Documento
-- [ ] Visión técnica inicial de módulos Maestros y Transaccionales
-- [ ] Definir campos y atributos para entidades principales
+- [x] Visión técnica inicial de módulos Maestros y Transaccionales
+- [x] Definir campos y atributos para entidades principales
 - [x] Mockups de interfaz como referencia visual (modo claro)
 - [ ] Insumo base para análisis y diseño en Django o similar
 
@@ -15,8 +15,8 @@
 
 #### Formularios:
 - [ ] **Iniciar sesión**
-  - [ ] usuario_o_email (requerido)
-  - [ ] password (requerido, no se almacena en vistas)
+  - [x] usuario_o_email (requerido)
+  - [x] password (requerido, no se almacena en vistas)
   - [ ] recordarme (opcional)
 
 - [ ] **Olvidé mi contraseña**
@@ -43,7 +43,7 @@
 #### Campos:
 - [ ] **Identificación**
   - [ ] username (requerido, único)
-  - [ ] email (requerido, único)
+  - [x] email (requerido, único)
   - [ ] nombres (requerido)
   - [ ] apellidos (requerido)
   - [ ] telefono (opcional)
