@@ -98,8 +98,8 @@
 
 ###  Gestión de Recursos
 - [x] Crear y usar Prefabs.  
-- [ ] Importar assets externos (modelos 3D, audios).  
-- [ ] Descargar paquetes de la Asset Store.  
+- [x] Importar assets externos (modelos 3D, audios).  
+- [x] Descargar paquetes de la Asset Store.  
 
 ###  Proyecto Final
 - [ ] Construir escena jugable.  
