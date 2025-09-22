@@ -102,6 +102,6 @@
 - [x] Descargar paquetes de la Asset Store.  
 
 ###  Proyecto Final
-- [ ] Construir escena jugable.  
+- [x] Construir escena jugable.  
 - [ ] Exportar a PC o móvil.  
 - [ ] Publicar versión demo.  
