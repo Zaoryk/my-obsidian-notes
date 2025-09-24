@@ -1,5 +1,19 @@
 # ==SEMANA 5
 
+### Ciclos de vida de un proyecto de software
+
+Marco que describe las fases y actividades involucradas en la creación de un sistema de *software*.
+
+**Proporciona una guía detallada para gestionar el desarrollo de _software_** desde la concepción inicial hasta su retiro, asegurando que el producto final cumpla con los requisitos del cliente y los estándares de calidad.
+
+| Requisitos                                              | Diseño                                         | Implementación             | Pruebas                                   | Despliegue                                              | Mantenimiento                                |
+| ------------------------------------------------------- | ---------------------------------------------- | -------------------------- | ----------------------------------------- | ------------------------------------------------------- | -------------------------------------------- |
+| Recopilación y análisis de las necesidades del cliente. | Planificación de la estructura del *software*. | Codificación del software. | Verificación y validación del *software*. | Implementación del software en el entorno de producción | Actualización y mejora continua del software |
+
+### Ciclo de vida de producto de *software*
+
+# ==SEMANA 6
+
 ### ¿Qué es un requerimiento?
 
 Descripción de los servicios que ofrece un sistema y sus restricciones operativas. También reflejan las necesidades de los clientes.
@@ -69,8 +83,7 @@ Recopila información precisa sobre las necesidades de los usuarios y los objeti
 Cada uno de los cuales tiene una participación en el _software._ Las partes interesadas podrán variar a través de proyectos, pero siempre incluirán los usuarios, operadores y clientes.
 
 
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-|     |     |     |     |     |
-
-# ==SEMANA 6
+| Usuarios                                                                                      | Clientes                                                                         | Los analistas de mercado                                                                                                       | Reguladores                                                                                         | Los ingenieros de software                                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A menudo es un grupo heterogéneo que involucra a personas con diferentes roles y necesidades. | Han encargado el _software_ o que representan el mercado objetivo de _software_. | la gente de marketing es necesaria para establecer las necesidades del mercado y para actuar como clientes de prueba o filtro. | El _software_ en estos dominios debe cumplir con los requerimientos de las autoridades reguladoras. | Un cliente de un producto en particular tiene requerimientos específicos que comprometen las posibilidades de reutilización de componentes, los ingenieros de _software_ deben sopesar sus intereses con respecto de los del cliente. |
+Es el trabajo del ingeniero de _software_ **negociar compensaciones** que sean aceptables para los principales grupos de interés y dentro de las limitaciones presupuestarias, técnicas, normativas y otros.
