@@ -148,6 +148,6 @@ https://developer.android.com/studio/build
 - [x] Crear AVD (emulador).  
 - [x] Crear proyecto → Empty Activity.  
 - [x] Diseñar interfaz en XML o Design view.  
-- [ ] Programar lógica en Kotlin/Java.  
+- [x] Programar lógica en Kotlin/Java.  
 - [x] Ejecutar en emulador o dispositivo físico.  
-- [ ] Agregar dependencias con Gradle.  
+- [x] Agregar dependencias con Gradle.  
