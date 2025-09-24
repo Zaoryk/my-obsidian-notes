@@ -2,7 +2,6 @@
 ### Objetos, Cámara, Desplazamiento y Colisión
 
 ---
-
 ## Checklist de Progreso
 
 ### Configuración del Proyecto
@@ -38,9 +37,6 @@
 - [x] Editar script en Visual Studio
 
 ---
-
-## Creación del Proyecto
-
 ### Pasos Iniciales
 1. Abrir Unity Hub → Pestaña "Projects"
 2. Click "New Project"
@@ -57,10 +53,6 @@
 - Click "Import"
 
 ---
-
-## Configuración de la Escena
-
-
 ### Game Objects en Hierarchy
 - Vehículo: Arrastrar desde COURSE LIBRARY > VEHICLES
 - Obstáculo: Arrastrar desde COURSE LIBRARY > OBSTACLES
