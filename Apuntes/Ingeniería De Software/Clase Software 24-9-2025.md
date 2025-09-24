@@ -1,14 +1,115 @@
 # ==SEMANA 5
 
-### Ciclos de vida de un proyecto de software
+| Término | Definición |
+|---------|------------|
+| **Análisis de requerimientos** | Determinar necesidades y condiciones para cumplir los objetivos de un proyecto. |
+| **Interacción del sistema** | Comunicación y colaboración entre los componentes de un sistema. |
+| **Levantamiento de requerimientos** | Recopilación y documentación de necesidades y expectativas del cliente. |
+| **Metodologías ágiles** | Prácticas de desarrollo que promueven flexibilidad y colaboración. |
+| **Metodologías de desarrollo** | Enfoques estructurados para planificar, diseñar, implementar y mantener software. |
+| **Patrones de diseño** | Soluciones reutilizables a problemas comunes en el diseño de software. |
+| **Propuesta de diseño** | Documento que describe cómo se construirá el sistema según los requisitos. |
+| **Calidad del software** | Grado en que un software cumple con requisitos y expectativas del usuario. |
+| **Ciclo de vida del software** | Fases desde la concepción del software hasta su retiro. |
+| **Cocreación** | Colaboración entre desarrolladores y usuarios para generar ideas y soluciones. |
+| **Diagrama de clases** | Representación de clases, atributos, métodos y relaciones en un sistema. |
+| **Diagrama de secuencia** | Interacción de objetos a través del tiempo. |
+| **Diagrama de casos de uso** | Interacciones entre actores externos y el sistema. |
+| **Scrum** | Marco ágil basado en iteraciones y retroalimentación continua. |
+| **Validación con cliente** | Verificación de que el producto final cumple expectativas y necesidades. |
 
-Marco que describe las fases y actividades involucradas en la creación de un sistema de *software*.
+---
 
-**Proporciona una guía detallada para gestionar el desarrollo de _software_** desde la concepción inicial hasta su retiro, asegurando que el producto final cumpla con los requisitos del cliente y los estándares de calidad.
+## Ciclos de Vida y Metodologías de Desarrollo
 
-| Requisitos                                              | Diseño                                         | Implementación             | Pruebas                                   | Despliegue                                              | Mantenimiento                                |
-| ------------------------------------------------------- | ---------------------------------------------- | -------------------------- | ----------------------------------------- | ------------------------------------------------------- | -------------------------------------------- |
-| Recopilación y análisis de las necesidades del cliente. | Planificación de la estructura del *software*. | Codificación del software. | Verificación y validación del *software*. | Implementación del software en el entorno de producción | Actualización y mejora continua del software |
+### Ciclo de vida de un proyecto de software
+1. **Requisitos**  
+2. **Diseño**  
+3. **Implementación**  
+4. **Pruebas**  
+5. **Despliegue y mantenimiento**
+
+### Metodologías
+
+| Tipo | Características | Ventajas | Limitaciones |
+|------|----------------|----------|--------------|
+| **Tradicional (Cascada)** | Fases secuenciales, requisitos definidos al inicio. | Claridad, documentación completa. | Poco flexible ante cambios. |
+| **Ágil (Scrum, Kanban)** | Iterativo, adaptable, basado en sprints. | Flexibilidad, retroalimentación continua. | Riesgo de poca planificación inicial. |
+| **Híbrido** | Combina lo mejor de ambos enfoques. | Flexibilidad + trazabilidad. | Puede ser complejo de implementar. |
+
+### Selección de metodología
+- Depende de: tamaño del proyecto, recursos disponibles, requisitos del cliente, plazos y presupuesto.
+
+---
+
+## Levantamiento de Requerimientos y Cocreación
+
+### ¿Qué es un requerimiento?
+- **Funcional** → qué hace el sistema.  
+- **No funcional** → restricciones (tiempo, seguridad, usabilidad, almacenamiento).
+
+### Técnicas
+1. Entrevistas  
+2. Talleres de cocreación  
+3. Encuestas y cuestionarios  
+4. Observación  
+5. Prototipos  
+6. Mapeo de historias de usuario  
+7. Análisis de documentación  
+8. Focus groups  
+
+### Actores del proceso
+- **Usuarios** → Operan el software.  
+- **Clientes** → Encargan el software.  
+- **Analistas de mercado** → Definen necesidades de mercado.  
+- **Reguladores** → Exigen cumplimiento normativo.  
+- **Ingenieros de software** → Desarrollo, reutilización y mantenimiento.  
+
+---
+
+## Patrones de Diseño
+
+| Patrón | Descripción | Uso | Ventajas | Desventajas |
+|--------|-------------|-----|----------|-------------|
+| **Singleton** | Una sola instancia global. | Configuración, logging. | Fácil acceso centralizado. | Difícil de testear, rompe SRP. |
+| **Factory** | Crea objetos sin especificar clase concreta. | Creación compleja y dinámica. | Extensible, flexible. | Aumenta complejidad. |
+| **Observer** | Relación 1 a muchos (suscriptor/publicador). | Eventos, sistemas reactivos. | Bajo acoplamiento. | Riesgos de rendimiento si hay muchos observadores. |
+| **Adapter** | Hace compatibles interfaces distintas. | Integración de código legado. | Reutilización sin modificar código. | Complejidad extra. |
+
+---
+
+## Diagramas UML
+
+### Tipos principales
+1. **Estructurales** → Clases, objetos, componentes, despliegue.  
+2. **De comportamiento** → Casos de uso, secuencia, actividades, estados.
+
+### Ejemplos
+- **Diagrama de casos de uso** → Interacciones entre actores y el sistema.  
+- **Diagrama de clases** → Estructura estática (atributos, métodos, relaciones).  
+- **Diagrama de secuencia** → Flujo de mensajes cronológico.  
+
+---
+
+## Estándares de Calidad en Software
+
+| Estándar | Enfoque | Aplicación |
+|----------|---------|------------|
+| **ISO/IEC 12207** | Procesos del ciclo de vida del software. | Proyectos con enfoque secuencial (Cascada). |
+| **ISO/IEC 33000 (SPICE)** | Madurez de procesos. | Evaluación y mejora continua. |
+| **ISO 9001** | Gestión de la calidad. | Satisfacción del cliente, mejora continua. |
+| **ISO/IEC 25000 (SQuaRE)** | Calidad del producto de software. | Métricas: funcionalidad, usabilidad, fiabilidad, mantenibilidad. |
+
+---
+
+## Ideas Fuerza
+
+1. La **metodología adecuada** impacta la eficiencia y calidad.  
+2. Los **requerimientos bien levantados** son clave para evitar fallos.  
+3. La **cocreación con el cliente** asegura que el software cumpla expectativas.  
+4. Los **patrones de diseño** son soluciones probadas para problemas comunes.  
+5. El **UML facilita la comunicación** entre equipos y stakeholders.  
+6. Los **estándares ISO** aseguran calidad y mejora continua.  
 
 ### Ciclo de vida de producto de *software*
 
@@ -30,12 +131,11 @@ Restricciones del servicios o funciones ofrecidos por el sistema. Restricciones 
 
 ![[Pasted image 20250924140726.png]]
 
-
-| Requerimientos del producto                                                                                                         | Requerimientos organizacionales                                                                        | Requerimientos externos | Requerimientos de interoperabilidad                                       | Requerimientos legislativos                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Rendimiento en la **rapidez** de ejecución del sistema y cuánta memoria se requiere;                                                | Estándares en los procesos que deben utilizarse;                                                       | no hay info :(          | La manera que el sistema interactúa con sistemas de otras organizaciones. | Deben seguirse para asegurar que el sistema funcione dentro de la ley. |
-| Requerimientos de **fiabilidad**, que fijan la tasa de fallos para que el sistema sea aceptable. Requerimientos de **portabilidad** | Requerimientos de implementación, como los lenguajes de programación o el método de diseño a utilizar. |                         |                                                                           |                                                                        |
-| Requerimientos de **usabilidad**                                                                                                    | Requerimientos de entrega que especifican cuándo se entregará el producto y su documentación           |                         |                                                                           |                                                                        |
+| Requerimientos del producto | Requerimientos organizacionales | Requerimientos externos | Requerimientos de interoperabilidad | Requerimientos legislativos |
+|-----------------------------|---------------------------------|-------------------------|-------------------------------------|-----------------------------|
+| Rendimiento en la **rapidez** de ejecución del sistema y cuánta memoria se requiere. | Estándares en los procesos que deben utilizarse. | Requerimientos de seguridad física (ej: condiciones del entorno donde operará el sistema). | La manera en que el sistema interactúa con sistemas de otras organizaciones. | Deben seguirse para asegurar que el sistema funcione dentro de la ley. |
+| Requerimientos de **fiabilidad**, que fijan la tasa de fallos aceptable. Requerimientos de **portabilidad**. | Requerimientos de implementación: lenguajes de programación o método de diseño a utilizar. | Requerimientos contractuales con clientes o proveedores (ej: plazos de entrega, niveles de servicio). | Compatibilidad con protocolos estándar (ej: HTTP, SOAP, REST, ISO/OSI). | Cumplimiento de normativas de protección de datos (ej: Ley 19.628 en Chile, GDPR en Europa). |
+| Requerimientos de **usabilidad**, facilidad de uso y accesibilidad. | Requerimientos de entrega: cuándo se entregará el producto y su documentación. | Requerimientos impuestos por el mercado o usuarios externos (ej: soporte multi-idioma, integración con apps de terceros). | Requerimientos de comunicación entre distintos módulos de software y hardware. | Requerimientos de licencias de software, propiedad intelectual, normas de accesibilidad (ej: WCAG). |
 
 #### En resumen:
 
