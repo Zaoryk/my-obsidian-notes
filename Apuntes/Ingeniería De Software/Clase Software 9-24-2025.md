@@ -1,22 +1,22 @@
 # ==SEMANA 5
 
-| Término | Definición |
-|---------|------------|
-| **Análisis de requerimientos** | Determinar necesidades y condiciones para cumplir los objetivos de un proyecto. |
-| **Interacción del sistema** | Comunicación y colaboración entre los componentes de un sistema. |
-| **Levantamiento de requerimientos** | Recopilación y documentación de necesidades y expectativas del cliente. |
-| **Metodologías ágiles** | Prácticas de desarrollo que promueven flexibilidad y colaboración. |
-| **Metodologías de desarrollo** | Enfoques estructurados para planificar, diseñar, implementar y mantener software. |
-| **Patrones de diseño** | Soluciones reutilizables a problemas comunes en el diseño de software. |
-| **Propuesta de diseño** | Documento que describe cómo se construirá el sistema según los requisitos. |
-| **Calidad del software** | Grado en que un software cumple con requisitos y expectativas del usuario. |
-| **Ciclo de vida del software** | Fases desde la concepción del software hasta su retiro. |
-| **Cocreación** | Colaboración entre desarrolladores y usuarios para generar ideas y soluciones. |
-| **Diagrama de clases** | Representación de clases, atributos, métodos y relaciones en un sistema. |
-| **Diagrama de secuencia** | Interacción de objetos a través del tiempo. |
-| **Diagrama de casos de uso** | Interacciones entre actores externos y el sistema. |
-| **Scrum** | Marco ágil basado en iteraciones y retroalimentación continua. |
-| **Validación con cliente** | Verificación de que el producto final cumple expectativas y necesidades. |
+| Término                             | Definición                                                                        |
+| ----------------------------------- | --------------------------------------------------------------------------------- |
+| **Análisis de requerimientos**      | Determinar necesidades y condiciones para cumplir los objetivos de un proyecto.   |
+| **Interacción del sistema**         | Comunicación y colaboración entre los componentes de un sistema.                  |
+| **Levantamiento de requerimientos** | Recopilación y documentación de necesidades y expectativas del cliente.           |
+| **Metodologías ágiles**             | Prácticas de desarrollo que promueven flexibilidad y colaboración.                |
+| **Metodologías de desarrollo**      | Enfoques estructurados para planificar, diseñar, implementar y mantener software. |
+| **Patrones de diseño**              | Soluciones reutilizables a problemas comunes en el diseño de software.            |
+| **Propuesta de diseño**             | Documento que describe cómo se construirá el sistema según los requisitos.        |
+| **Calidad del software**            | Grado en que un software cumple con requisitos y expectativas del usuario.        |
+| **Ciclo de vida del software**      | Fases desde la concepción del software hasta su retiro.                           |
+| **Cocreación**                      | Colaboración entre desarrolladores y usuarios para generar ideas y soluciones.    |
+| **Diagrama de clases**              | Representación de clases, atributos, métodos y relaciones en un sistema.          |
+| **Diagrama de secuencia**           | Interacción de objetos a través del tiempo.                                       |
+| **Diagrama de casos de uso**        | Interacciones entre actores externos y el sistema.                                |
+| **Scrum**                           | Marco ágil basado en iteraciones y retroalimentación continua.                    |
+| **Validación con cliente**          | Verificación de que el producto final cumple expectativas y necesidades.          |
 
 ---
 
