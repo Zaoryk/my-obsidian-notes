@@ -4,7 +4,7 @@
 - [x] Visión técnica inicial de módulos Maestros y Transaccionales
 - [x] Definir campos y atributos para entidades principales
 - [x] Mockups de interfaz como referencia visual (modo claro)
-- [ ] Insumo base para análisis y diseño en Django o similar
+- [x] Insumo base para análisis y diseño en Django o similar
 
 ---
 

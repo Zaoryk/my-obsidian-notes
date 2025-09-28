@@ -1,3 +1,4 @@
+![[software 4.wav]]
 # ==SEMANA 5
 
 | Término                             | Definición                                                                        |
