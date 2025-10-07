@@ -199,10 +199,10 @@ echo json_encode($val);
 ---
 
 ## Documentación
-- 📚 [Documentación oficial de Volley](https://developer.android.com/training/volley)
-- 💾 [SQLite en Android](https://developer.android.com/training/data-storage/sqlite)
-- ☁️ [AWS EC2 - Servicios Web](https://aws.amazon.com/ec2/)
-- 🔒 [Android Manifest Permissions](https://developer.android.com/guide/topics/manifest/manifest-intro)
+-  [Documentación oficial de Volley](https://developer.android.com/training/volley)
+-  [SQLite en Android](https://developer.android.com/training/data-storage/sqlite)
+-  [AWS EC2 - Servicios Web](https://aws.amazon.com/ec2/)
+-  [Android Manifest Permissions](https://developer.android.com/guide/topics/manifest/manifest-intro)
 
 ---
 
