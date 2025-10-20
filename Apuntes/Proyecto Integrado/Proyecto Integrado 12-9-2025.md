@@ -14,10 +14,10 @@
 **No es maestro, pero define formularios clave**
 
 #### Formularios:
-- [ ] **Iniciar sesión**
+- [x] **Iniciar sesión**
   - [x] usuario_o_email (requerido)
   - [x] password (requerido, no se almacena en vistas)
-  - [ ] recordarme (opcional)
+  - [x] recordarme (opcional)
 
 - [ ] **Olvidé mi contraseña**
   - [ ] email (requerido, debe existir)
@@ -41,12 +41,11 @@
 **Administra información de usuarios del sistema**
 
 #### Campos:
-- [ ] **Identificación**
-  - [ ] username (requerido, único)
+- [x] **Identificación**
+  - [x] username (requerido, único)
   - [x] email (requerido, único)
-  - [ ] nombres (requerido)
-  - [ ] apellidos (requerido)
-  - [ ] telefono (opcional)
+  - [x] nombres (requerido)
+  - [x] apellidos (requerido)
 
 - [ ] **Estado y acceso**
   - [ ] rol (requerido)
@@ -61,9 +60,9 @@
 
 #### Funcionalidades:
 - [ ] CRUD completo de usuarios
-- [ ] Gestión de roles y permisos
-- [ ] Control de estado (activo, bloqueado, desactivado)
-- [ ] Historial de accesos y auditoría
+- [x] Gestión de roles y permisos
+- [x] Control de estado (activo, bloqueado, desactivado)
+- [x] Historial de accesos y auditoría
 
 ---
 
@@ -117,29 +116,21 @@
   - [ ] razon_social (requerido)
   - [ ] nombre_fantasia (opcional)
   - [ ] email (requerido)
-  - [ ] telefono (opcional)
-  - [ ] sitio_web (opcional)
 
 - [ ] **Dirección**
-  - [ ] direccion (opcional)
-  - [ ] ciudad (opcional)
   - [ ] pais (requerido; default: "Chile")
 
 - [ ] **Comercial**
   - [ ] condiciones_pago (requerido)
   - [ ] moneda (requerido; ej. CLP)
-  - [ ] contacto_principal_nombre (opcional)
-  - [ ] contacto_principal_email (opcional)
-  - [ ] contacto_principal_telefono (opcional)
-  - [ ] estado (requerido; ENUM: ACTIVO, BLOQUEADO)
-  - [ ] observaciones (opcional)
+  - [x] estado (requerido; ENUM: ACTIVO, BLOQUEADO)
 
 - [ ] **Relación con productos (vista asociada)**
-  - [ ] producto_id (FK, requerido al asociar)
-  - [ ] costo (requerido)
+  - [x] producto_id (FK, requerido al asociar)
+  - [x] costo (requerido)
   - [ ] lead_time_dias (requerido; default: 7)
   - [ ] min_lote (opcional; default: 1)
-  - [ ] descuento_ptt (opcional)
+  - [x] descuento_ptt (opcional)
   - [ ] preferente (requerido; default: 0)
 
 #### Validaciones:
