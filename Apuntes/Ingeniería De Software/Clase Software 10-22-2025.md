@@ -1,20 +1,63 @@
-# SaaS, IaaS y Cloud Computing
+# Cloud Computing
 
-## Introducción a Cloud Computing
+## ¿Qué es Cloud Computing?
 
-Cloud computing es un modelo que permite acceder a recursos informáticos via Internet bajo demanda, eliminando la necesidad de grandes inversiones en infraestructura física. Sus modelos más usados son SaaS (Software as a Service), IaaS (Infrastructure as a Service) y PaaS (Platform as a Service).
+Cloud computing, o computación en la nube, es un modelo de prestación de servicios tecnológicos que permite el **acceso remoto** a recursos informáticos (como servidores, almacenamiento, bases de datos, redes, software y más) a través de Internet. En lugar de mantener una infraestructura física propia, las organizaciones **utilizan servicios bajo demanda**, pagando solo por lo que consumen.
+
+El concepto principal es que los recursos informáticos se comportan como un servicio público: se pueden **aprovisionar, escalar y liberar dinámicamente**, al igual que sucede con la energía eléctrica o el agua.
+
+---
+
+## Modelos de servicio
+
+La computación en la nube se clasifica normalmente en tres modelos principales:
+
+| Modelo | Nombre completo | Descripción breve | Ejemplos |
+|---------|----------------|-------------------|-----------|
+| **SaaS** | Software as a Service | Acceso a aplicaciones a través de Internet sin instalar nada localmente. | Google Workspace, Microsoft 365, Salesforce |
+| **PaaS** | Platform as a Service | Proporciona herramientas y entornos de desarrollo manejados por el proveedor. | Heroku, Google App Engine, AWS Elastic Beanstalk |
+| **IaaS** | Infrastructure as a Service | Provee infraestructura virtualizada como servidores, redes y almacenamiento. | AWS EC2, Microsoft Azure, Google Cloud Platform |
 
 ---
 
-## Características fundamentales de Cloud Computing
+## Características esenciales del Cloud Computing
 
-- Autoservicio bajo demanda
-- Acceso por red amplia
-- Agrupamiento de recursos
-- Escalabilidad rápida
-- Servicio medido (pago por uso)
+1. **Autoservicio bajo demanda:** Los usuarios pueden aprovisionar recursos sin intervención humana del proveedor.
+2. **Acceso amplio a la red:** Los recursos están disponibles desde cualquier lugar con conexión a Internet.
+3. **Agrupamiento de recursos:** Se comparten los mismos recursos físicos entre distintos usuarios mediante virtualización.
+4. **Elasticidad rápida:** Se pueden aumentar o disminuir los recursos de forma automática según la demanda.
+5. **Medición del servicio:** El consumo se monitorea y factura según el uso real.
 
 ---
+
+## Tipos de implementación
+
+| Tipo de nube | Descripción | Uso típico |
+|---------------|-------------|-------------|
+| **Pública** | Infraestructura ofrecida por proveedores externos accesible al público. | Startups, servicios web globales |
+| **Privada** | Infraestructura mantenida para uso exclusivo de una organización. | Grandes empresas, instituciones financieras |
+| **Híbrida** | Mezcla de nube pública y privada con interoperabilidad. | Migraciones graduales, respaldo y recuperación |
+
+---
+
+## Beneficios principales
+
+- **Reducción de costos:** Elimina la necesidad de grandes inversiones en hardware y mantenimiento.
+- **Escalabilidad:** Permite ajustar la capacidad según el crecimiento o la carga de trabajo.
+- **Acceso global:** Los recursos están disponibles desde cualquier dispositivo y lugar.
+- **Alta disponibilidad:** Los proveedores garantizan tiempos de funcionamiento de más del 99,9%.
+- **Seguridad avanzada:** Medidas de cifrado, autenticación y redundancia implementadas por los proveedores.
+
+---
+
+## Desafíos y consideraciones
+
+- **Dependencia del proveedor:** La migración y portabilidad de datos pueden ser complejas.
+- **Privacidad y cumplimiento normativo:** Debe garantizarse el cumplimiento de normas locales y sectoriales (como GDPR o ISO 27001).
+- **Conectividad a Internet:** La disponibilidad depende completamente de una conexión estable.
+
+
+# SaaS, PaaS e IaaS
 
 ## Modelos principales
 
@@ -49,7 +92,8 @@ Cloud computing es un modelo que permite acceder a recursos informáticos via In
 - **Pago:** Por recursos utilizados.
 - **Usuario típico:** arquitectos de red, empresas con necesidades complejas.
 
-### PaaS (Platform as a Service)  # Añadido para contexto y comparación
+### PaaS (Platform as a Service) 
+
 - **Definición:** Entorno para desarrollar, testear y desplegar software sin gestionar la infraestructura subyacente.
 - **Ejemplos:** Heroku, AWS Elastic Beanstalk, Google App Engine, Azure App Service.
 - **Ventajas:**
@@ -82,12 +126,4 @@ Cloud computing es un modelo que permite acceder a recursos informáticos via In
 - El PaaS facilita la velocidad de desarrollo y despliegue.
 - Son modelos escalables utilizados por startups, pymes y grandes empresas.
 
----
-
-## Ventajas generales de Cloud Computing
-
-- Menores inversiones iniciales
-- Ajuste dinámico de recursos
-- Acceso universal
-- Enfoque en el core business
 
