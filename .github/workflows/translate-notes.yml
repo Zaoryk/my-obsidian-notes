@@ -2,7 +2,9 @@ name: Translate Notes to English
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
     paths:
       - '**/*.md'
   workflow_dispatch:
@@ -12,28 +14,28 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install deep-translator
-    
-    - name: Translate notes
-      run: python .github/scripts/translate.py
-    
-    - name: Commit translations
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add .
-        git diff --quiet && git diff --staged --quiet || git commit -m "🌐 Auto-translate: Update English notes"
-        git push
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install deep-translator
+      
+      - name: Translate notes
+        run: python .github/scripts/translate.py
+      
+      - name: Commit translations
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "🌐 Auto-translate: Update English notes"
+          git push
