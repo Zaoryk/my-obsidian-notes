@@ -1,0 +1,56 @@
+name: Translate Notes to English
+
+# When should this workflow run?
+on:
+  # Run when you push .md files to main branch
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**/*.md'
+  
+  # Add a manual "Run workflow" button
+  workflow_dispatch:
+
+# What should the workflow do?
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Step 1: Download your repository
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    # Step 2: Install Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    # Step 3: Install translation libraries (choose your method below)
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        # METHOD 1: Google Translate (No signup)
+        pip install deep-translator
+        
+        # METHOD 2: Argos Translate (Offline) - Uncomment if using
+        # pip install argostranslate
+        
+        # METHOD 3: LibreTranslate (Open source) - Uncomment if using
+        # pip install libretranslatepy
+    
+    # Step 4: Run the translation script
+    - name: Translate notes
+      run: python .github/scripts/translate.py
+    
+    # Step 5: Save changes back to GitHub
+    - name: Commit translations
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "🌐 Auto-translate: Update English notes"
+        git push
