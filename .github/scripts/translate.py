@@ -19,6 +19,18 @@ FOLDERS_TO_TRANSLATE = [
     "Apuntes"
 ]
 
+FOLDER_NAME_TRANSLATIONS = {
+    "Aplicaciones Móviles para IoT": "Mobile Applications for IoT",
+    "Desarrollo de Videojuegos": "Video Game Development",
+    "Ingeniería de Software": "Software Engineering",
+    "Inglés Inicial": "Initial English",
+    "Modelamiento de Soluciones Informáticas": "IT Solutions Modeling",
+    "Programación Back End": "Back End Programming",
+    "Proyecto Integrado": "Integrated Project",
+    "Archivos": "Files",
+    "Apuntes": "Notes"
+}
+
 SOURCE_LANGUAGE = 'es'
 TARGET_LANGUAGE = 'en'
 CHUNK_SIZE = 4000
@@ -126,6 +138,9 @@ def needs_translation(spanish_file, english_file):
     
     return spanish_mtime > english_mtime
 
+def get_english_folder_name(spanish_folder_name):
+    return FOLDER_NAME_TRANSLATIONS.get(spanish_folder_name, spanish_folder_name)
+
 def main():
     english_root = pathlib.Path(ENGLISH_ROOT)
     english_root.mkdir(exist_ok=True)
@@ -136,6 +151,8 @@ def main():
         if not spanish_folder.exists():
             continue
         
+        english_folder_name = get_english_folder_name(folder)
+        
         markdown_files = list(spanish_folder.rglob("*.md"))
         
         for spanish_file in markdown_files:
@@ -143,7 +160,7 @@ def main():
                 continue
             
             relative_path = spanish_file.relative_to(spanish_folder)
-            english_file = english_root / folder / relative_path
+            english_file = english_root / english_folder_name / relative_path
             
             if needs_translation(spanish_file, english_file):
                 try:
