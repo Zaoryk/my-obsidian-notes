@@ -19,18 +19,18 @@
   - [x] password (requerido, no se almacena en vistas)
   - [x] recordarme (opcional)
 
-- [ ] **Olvidé mi contraseña**
-  - [ ] email (requerido, debe existir)
+- [x] **Olvidé mi contraseña**
+  - [x] email (requerido, debe existir)
 
-- [ ] **Restablecer contraseña (con token)**
-  - [ ] token (requerido, solo lectura en UI)
-  - [ ] nueva_password (requerida, ≥12 caracteres, complejidad)
-  - [ ] confirmar_password (requerida, debe coincidir)
+- [x] **Restablecer contraseña (con token)**
+  - [x] token (requerido, solo lectura en UI)
+  - [x] nueva_password (requerida, ≥12 caracteres, complejidad)
+  - [x] confirmar_password (requerida, debe coincidir)
 
-- [ ] **Cambiar contraseña (usuario autenticado)**
-  - [ ] password_actual (requerida)
-  - [ ] nueva_password
-  - [ ] confirmar_password
+- [x] **Cambiar contraseña (usuario autenticado)**
+  - [x] password_actual (requerida)
+  - [x] nueva_password
+  - [x] confirmar_password
 
 - [ ] **MFA (opcional)**
   - [ ] codigo_totp (requerido cuando MFA activo)
@@ -47,19 +47,19 @@
   - [x] nombres (requerido)
   - [x] apellidos (requerido)
 
-- [ ] **Estado y acceso**
-  - [ ] rol (requerido)
-  - [ ] estado (requerido; default: ACTIVO)
-  - [ ] mfa_habilitado (requerido; default: 0)
-  - [ ] ultimo_acceso (solo lectura)
-  - [ ] sesiones_activas (contador/solo lectura)
+- [x] **Estado y acceso**
+  - [x] rol (requerido)
+  - [x] estado (requerido; default: ACTIVO)
+  - [x] mfa_habilitado (requerido; default: 0)
+  - [x] ultimo_acceso (solo lectura)
+  - [x] sesiones_activas (contador/solo lectura)
 
-- [ ] **Metadatos**
-  - [ ] area/unidad (opcional)
-  - [ ] observaciones (opcional)
+- [x] **Metadatos**
+  - [x] area/unidad (opcional)
+  - [x] observaciones (opcional)
 
 #### Funcionalidades:
-- [ ] CRUD completo de usuarios
+- [x] CRUD completo de usuarios
 - [x] Gestión de roles y permisos
 - [x] Control de estado (activo, bloqueado, desactivado)
 - [x] Historial de accesos y auditoría
@@ -70,40 +70,40 @@
 **Centraliza la gestión de productos**
 
 #### Campos:
-- [ ] **Identificación**
+- [x] **Identificación**
   - [ ] sku (requerido, único)
   - [ ] ean_upc (opcional, único si se usa)
-  - [ ] nombre (requerido)
-  - [ ] descripcion (opcional)
-  - [ ] categoria (requerido)
+  - [x] nombre (requerido)
+  - [x] descripcion (opcional)
+  - [x] categoria (requerido)
   - [ ] marca (opcional)
   - [ ] modelo (opcional)
 
-- [ ] **Unidades y precios**
-  - [ ] uom_compra (requerido; ej. UN, CAJA, KG)
-  - [ ] uom_venta (requerido)
-  - [ ] factor_conversion (requerido; default: 1)
+- [x] **Unidades y precios**
+  - [x] uom_compra (requerido; ej. UN, CAJA, KG)
+  - [x] uom_venta (requerido)
+  - [x] factor_conversion (requerido; default: 1)
   - [ ] costo_estandar (opcional)
-  - [ ] costo_promedio (solo lectura)
+  - [x] costo_promedio (solo lectura)
   - [ ] precio_venta (opcional)
-  - [ ] impuesto_iva (requerido; ej. 19%)
+  - [x] impuesto_iva (requerido; ej. 19%)
 
-- [ ] **Stock y control**
-  - [ ] stock_minimo (requerido; default: 0)
+- [x] **Stock y control**
+  - [x] stock_minimo (requerido; default: 0)
   - [ ] stock_maximo (opcional)
   - [ ] punto_reorden (opcional; si no, usar mínimo)
-  - [ ] perishable (requerido; default: 0)
-  - [ ] control_por_lote (requerido; default: 0)
-  - [ ] control_por_serie (requerido; default: 0)
+  - [x] perishable (requerido; default: 0)
+  - [x] control_por_lote (requerido; default: 0)
+  - [x] control_por_serie (requerido; default: 0)
 
-- [ ] **Relaciones y soporte**
-  - [ ] imagen_url (opcional)
+- [x] **Relaciones y soporte**
+  - [x] imagen_url (opcional)
   - [ ] ficha_tecnica_url (opcional)
 
-- [ ] **Derivados (solo lectura)**
-  - [ ] stock_actual (calculado)
-  - [ ] alerta_bajo_stock (calculado)
-  - [ ] alerta_por_vencer (si perishable/lote)
+- [x] **Derivados (solo lectura)**
+  - [x] stock_actual (calculado)
+  - [x] alerta_bajo_stock (calculado)
+  - [x] alerta_por_vencer (si perishable/lote)
 
 ---
 
@@ -111,32 +111,32 @@
 **Gestiona información de proveedores**
 
 #### Campos:
-- [ ] **Identificación legal y contacto**
-  - [ ] rut_nif (requerido, único)
-  - [ ] razon_social (requerido)
-  - [ ] nombre_fantasia (opcional)
-  - [ ] email (requerido)
+- [x] **Identificación legal y contacto**
+  - [x] rut_nif (requerido, único)
+  - [x] razon_social (requerido)
+  - [x] nombre_fantasia (opcional)
+  - [x] email (requerido)
 
-- [ ] **Dirección**
-  - [ ] pais (requerido; default: "Chile")
+- [x] **Dirección**
+  - [x] pais (requerido; default: "Chile")
 
-- [ ] **Comercial**
-  - [ ] condiciones_pago (requerido)
-  - [ ] moneda (requerido; ej. CLP)
+- [x] **Comercial**
+  - [x] condiciones_pago (requerido)
+  - [x] moneda (requerido; ej. CLP)
   - [x] estado (requerido; ENUM: ACTIVO, BLOQUEADO)
 
-- [ ] **Relación con productos (vista asociada)**
+- [x] **Relación con productos (vista asociada)**
   - [x] producto_id (FK, requerido al asociar)
   - [x] costo (requerido)
-  - [ ] lead_time_dias (requerido; default: 7)
+  - [x] lead_time_dias (requerido; default: 7)
   - [ ] min_lote (opcional; default: 1)
   - [x] descuento_ptt (opcional)
-  - [ ] preferente (requerido; default: 0)
+  - [x] preferente (requerido; default: 0)
 
 #### Validaciones:
-- [ ] rut_nif único
-- [ ] email válido
-- [ ] Al marcar preferente: una por producto (o permitir varias pero destacar una)
+- [x] rut_nif único
+- [x] email válido
+- [x] Al marcar preferente: una por producto (o permitir varias pero destacar una)
 
 ---
 
@@ -144,15 +144,15 @@
 **Gestiona movimientos de inventario y trazabilidad**
 
 #### Características:
-- [ ] **Tipos de movimiento**: ingresos, salidas, ajustes, devoluciones, transferencias
-- [ ] **Datos del movimiento**: fecha, tipo, producto, proveedor, bodega, cantidad
-- [ ] **Control avanzado**: manejo por lotes, series y fechas de vencimiento
+- [x] **Tipos de movimiento**: ingresos, salidas, ajustes, devoluciones, transferencias
+- [x] **Datos del movimiento**: fecha, tipo, producto, proveedor, bodega, cantidad
+- [x] **Control avanzado**: manejo por lotes, series y fechas de vencimiento
 
 #### Campos en formulario de movimiento:
-- [ ] doc_referencia
-- [ ] motivo (para ajustes/devoluciones)
-- [ ] observaciones
-- [ ] Campos específicos por tipo de movimiento
+- [x] doc_referencia
+- [x] motivo (para ajustes/devoluciones)
+- [x] observaciones
+- [x] Campos específicos por tipo de movimiento
 
 ---
 
@@ -160,33 +160,33 @@
 **Nota**: Los diseños son solo referenciales para guiar el desarrollo
 
 ### Interfaces incluidas:
-- [ ] Login y recuperación de contraseña
-- [ ] Formulario de usuarios con tabla de datos
-- [ ] Formulario de productos con pestañas:
-  - [ ] 1. Identificación y precios
-  - [ ] 2. Stock y control
-  - [ ] 3. Relaciones y derivados
-- [ ] Formulario de proveedores con pestañas:
-  - [ ] 1. Identificación y contacto
-  - [ ] 2. Dirección y comercial
-  - [ ] 3. Relación con productos
-- [ ] Módulo de inventario con registro de movimientos
+- [x] Login y recuperación de contraseña
+- [x] Formulario de usuarios con tabla de datos
+- [x] Formulario de productos con pestañas:
+  - [x] 1. Identificación y precios
+  - [x] 2. Stock y control
+  - [x] 3. Relaciones y derivados
+- [x] Formulario de proveedores con pestañas:
+  - [x] 1. Identificación y contacto
+  - [x] 2. Dirección y comercial
+  - [x] 3. Relación con productos
+- [x] Módulo de inventario con registro de movimientos
 
 ---
 
 ## Consideraciones Técnicas
-- [ ] Los mockups están en modo claro (solo referencia visual)
-- [ ] Desarrollo posterior en Django o frameworks similares
-- [ ] Asegurar consistencia de datos y escalabilidad
-- [ ] Implementar validaciones de datos y negocios
-- [ ] Considerar auditoría y trazabilidad en transacciones
+- [x] Los mockups están en modo claro (solo referencia visual)
+- [x] Desarrollo posterior en Django o frameworks similares
+- [x] Asegurar consistencia de datos y escalabilidad
+- [x] Implementar validaciones de datos y negocios
+- [x] Considerar auditoría y trazabilidad en transacciones
 
 ---
 
 ## Próximos Pasos
-- [ ] Validar requerimientos con stakeholders
-- [ ] Definir modelo de datos detallado
-- [ ] Establecer arquitectura técnica
-- [ ] Planificar sprints de desarrollo
-- [ ] Implementar módulos prioritarios primero
+- [x] Validar requerimientos con stakeholders
+- [x] Definir modelo de datos detallado
+- [x] Establecer arquitectura técnica
+- [x] Planificar sprints de desarrollo
+- [x] Implementar módulos prioritarios primero
 - [ ] Realizar pruebas y ajustes
